@@ -128,44 +128,98 @@ button[type="submit"]:hover {
 }
 
 /* Dynamic Resume Styling */
+/* Dynamic Resume Styling */
 #resume-display {
+    width: 90%;
+    max-width: 1000px; /* Adjusted width for a wider layout */
     font-family: 'Quicksand', sans-serif;
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
+    color: #333;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
     padding: 30px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     margin: 20px auto;
-    opacity: 0.95;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
+/* Title Styling for Sections */
 #resume-display h2 {
     font-size: 2rem;
-    color: #88d3ce;
-    text-align: center;
-    margin-bottom: 10px;
+    color: #3b8d99; /* Subtle professional color */
+    text-align: left;
+    border-bottom: 2px solid #88d3ce;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 #resume-display h3 {
     font-size: 1.5rem;
-    color: #ffb6b9;
-    margin-top: 20px;
+    color: #6b6b83;
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
+/* Paragraph Styling for Content */
 #resume-display p {
-    font-size: 1.1rem;
-    color: #ffffff;
-    padding: 5px 0;
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+    line-height: 1.6;
 }
 
+/* Highlighted Text Styling */
 #resume-display p span {
-    color: #6e45e2;
+    color: #3b8d99;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Subtle Accent Lines */
+#resume-display .section-divider {
+    border-bottom: 1px solid #ddd;
+    margin: 20px 0;
+    opacity: 0.8;
+}
+
+/* Improved Layout for Fields */
+#resume-display .field {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+#resume-display .field label {
     font-weight: bold;
-    text-decoration: underline;
-    cursor: pointer;
+    color: #6e45e2;
+    flex-basis: 30%;
+    font-size: 1rem;
+}
+
+#resume-display .field p {
+    flex-basis: 65%;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #resume-display {
+        padding: 20px;
+    }
+    #resume-display h2 {
+        font-size: 1.5rem;
+    }
+    #resume-display h3 {
+        font-size: 1.2rem;
+    }
+    #resume-display .field {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #resume-display .field label,
+    #resume-display .field p {
+        flex-basis: 100%;
+        font-size: 1rem;
+    }
 }
 
 /* Sharable Link Container Styling */
